@@ -21,7 +21,9 @@ $('#courtforms').on('click', function(e) {
     //e.preventDefault();
     alert('test');
   });
-
+jQuery.get('text.txt', function(data) {
+      document.getElementById("readme").innerHTML = data;
+});
 function logBackIn() {
   document.getElementById("refresh").classList.add("hidden");
 }

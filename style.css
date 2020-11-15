@@ -4,12 +4,22 @@ body {
   align-content: center;
   text-align: center;
   justify-content: center;
+  width: 100vw;
+  margin: 0;
 }
 
 #banner {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #002E60;
+  padding: 0;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  height: 100px;
+  margin: auto;
+  color: white;
 }
 
 #courtforms {
@@ -17,6 +27,21 @@ body {
   justify-content: center;
   align-items: center;
   pointer-events: none;
+  flex-direction: row;
+}
+
+.courtforms {
+  width: 100%;
+  padding-top: 20px;
+}
+
+#divider {
+  width: 1px;
+  height: 60vh;
+  color: black;
+  background-color: black;
+  margin-top: 20px;
+
 }
 
 #courtforms iframe {
