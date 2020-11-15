@@ -120,3 +120,14 @@ body {
   background-color: #fffccc;
   padding: 20px;
 }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #002E60;
+  color: white;
+  text-align: center;
+
+}

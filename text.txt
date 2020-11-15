@@ -1,6 +1,6 @@
-<p>This page has been designed as a prototype solution for protecting users' data privacy. If a user begins to fill out an online form but then decides to leave without finishing, the browser will lock and clear the user's personal information. The user experience is listed below:</p>
+<p>This page has been designed as a prototype solution for protecting users' data privacy on public computers. If a user begins to fill out an online form but then decides to leave without finishing, the browser will lock and clear the user's personal information. The user experience is listed below:</p>
 
 <p>1. User opens the form and begins filling in personal information.</p>
 <p>2. If user is idle for 10 seconds, the browser will prompt the user to confirm that they are still active.</p>
-<p>3. If user is still actively filling out the form, the user can move the mouse or press a key and the session will remain active.</p>
+<p>3. If user is still active, they can move the mouse or press a key and the session will remain open.</p>
 <p>4. If user has left without submitting the form or clearing the data, the browser will automatically clear the data after 20 seconds.</p>
