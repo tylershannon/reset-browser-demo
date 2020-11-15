@@ -21,6 +21,7 @@ body {
   height: 100px;
   margin: auto;
   color: white;
+  z-index: 100;
 }
 
 #courtforms {
