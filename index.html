@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eviction Defense Portal</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="banner">
+      <h1 id="main">Eviction Defense Portal</h1>
+    </div>
+
+    <div id="refresh" class="hidden">
+      <h1>Ooops, your session has expired!</h1>
+      <h3>For your privacy we have saved your progress and logged you out.</h3>
+      <div id="buttons">
+        <button id="log-back-in" onclick="logBackIn()">Log Back In</button>
+        <button id="start-new-session" onclick="newSession()">Start a New Session</button>
+      </div>
+    </div>
+
+    <div id="still-there" class="hidden">
+      <h1>Are you still working?</h1>
+      <h4 id="countdown"><h4>
+      <h3 id="wiggle">Wiggle your mouse to keep your session active!</h3>
+    </div>
+
+    <div id="courtforms">
+      <img src="assets/massaccess.png" width="100%">
+    </div>
+
+  </body>
+</html>
