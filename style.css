@@ -44,13 +44,14 @@ body {
 /* Create four equal columns */
 .column {
   flex: 25%;
-  padding: 60px;
+  padding: 20px;
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
   .column {
     flex: 50%;
+    margin-bottom: 20px;
   }
 }
 
@@ -63,7 +64,7 @@ body {
   flex-direction: column;
   background-color: white;
   align-items: center;
-  position: absolute;
+  position: fixed;
   text-align: center;
   left: 50%;
   top: 50%;
@@ -80,7 +81,7 @@ body {
   flex-direction: column;
   background-color: white;
   align-items: center;
-  position: absolute;
+  position: fixed;
   text-align: center;
   left: 50%;
   top: 50%;
@@ -119,8 +120,11 @@ body {
 #form {
   background-color: #fffccc;
   padding: 20px;
-  padding-bottom: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+}
+
+#form-div {
+  margin-bottom: 50px;
 }
 
 footer {
