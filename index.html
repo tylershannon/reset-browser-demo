@@ -13,10 +13,9 @@
     </div>
 
     <div id="refresh" class="hidden">
-      <h1>Ooops, your session has expired!</h1>
+      <h1>Oops, your session has expired!</h1>
       <h3>For your privacy we have saved your progress and logged you out.</h3>
       <div id="buttons">
-        <button id="log-back-in" onclick="logBackIn()">Log Back In</button>
         <button id="start-new-session" onclick="newSession()">Start a New Session</button>
       </div>
     </div>
@@ -27,14 +26,30 @@
       <h3 id="wiggle">Wiggle your mouse to keep your session active!</h3>
     </div>
 
-    <div id="courtforms">
-      <div id="readme" class="courtforms">
+    <div id="courtforms" class="row">
+      <div class="courtforms column">
         <h3>Read Me</h3>
-        <p id="readme"></p>
+        <hr>
+        <div id="readme"></div>
       </div>
-      <div id="divider"></div>
-      <div id="form-div" class="courtforms">
+      <div id="form-div" class="courtforms column">
         <h3>Demo</h3>
+        <hr>
+        <div id="demo">
+          <p>Test it out. Fill out this simple form, and then leave your browser idle for 10 seconds.</p>
+          <br>
+          <br>
+          <div id="form">
+            <h4>1. What is today's Date?</h4>
+            <input type="date" id="date" name="date-input" value="yyyy-MM-dd" min="2020-01-01" max="2021-12-31">
+            <h4>2. Is it raining today?</h4>
+            <select id="raining" name="raining">
+              <option value="-">-</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
 

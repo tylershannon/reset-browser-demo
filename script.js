@@ -29,6 +29,7 @@ function logBackIn() {
 }
 function newSession() {
   document.getElementById("refresh").classList.add("hidden");
+  location.reload();
 }
 
 
@@ -39,6 +40,7 @@ function timerIncrement() {
         //window.location.reload();
         document.getElementById("still-there").classList.add("hidden");
         document.getElementById("refresh").classList.remove("hidden");
+
     }
     if (idleTime > 10 & idleTime < 21) {
         //window.location.reload();

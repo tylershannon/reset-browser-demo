@@ -6,6 +6,7 @@ body {
   justify-content: center;
   width: 100vw;
   margin: 0;
+  font-family: sans-serif;
 }
 
 #banner {
@@ -25,27 +26,32 @@ body {
 #courtforms {
   display: flex;
   justify-content: center;
-  align-items: center;
-  pointer-events: none;
-  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .courtforms {
   width: 100%;
-  padding-top: 20px;
+  padding: 20px 80px 0px 80px;
 }
 
-#divider {
-  width: 1px;
-  height: 60vh;
-  color: black;
-  background-color: black;
-  margin-top: 20px;
-
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#courtforms iframe {
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  padding: 60px;
+}
 
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
 }
 
 .hidden {
@@ -104,4 +110,13 @@ body {
   background-color: #002E60;
   color: white;
   padding: 5px 15px 5px 15px;
+}
+
+#readme {
+  text-align: left;
+}
+
+#form {
+  background-color: #fffccc;
+  padding: 20px;
 }
